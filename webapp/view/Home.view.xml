@@ -1,0 +1,22 @@
+<mvc:View
+	controllerName="sap.ui.demo.basicTemplate.controller.Home"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="{i18n>title}">
+		<customHeader>
+			<Bar>
+				<contentRight>
+					<Button id="edit" text="Edit" enabled="true" press="handleEditPress" />
+					<Button id="save" text="Save" type="Emphasized" visible="false" press="handleSavePress" />
+					<Button id="cancel" text="Cancel" visible="false" press="handleCancelPress" />
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			
+		</content>
+	</Page>
+</mvc:View>
