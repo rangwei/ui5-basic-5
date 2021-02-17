@@ -16,6 +16,17 @@ sap.ui.define([
 			this._showFormFragment("Display");
 		},
 
+		onExit : function () {
+			for (var sPropertyName in this._formFragments) {
+				if (!this._formFragments.hasOwnProperty(sPropertyName) || this._formFragments[sPropertyName] == null) {
+					return;
+				}
+
+				this._formFragments[sPropertyName].destroy();
+				this._formFragments[sPropertyName] = null;
+			}
+		},
+
 		handleEditPress : function () {
 
 		
